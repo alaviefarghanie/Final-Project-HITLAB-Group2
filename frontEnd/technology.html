@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <nav class="obj-width">
+    <nav>
         <a href="#" class="logo">
             <img src="assets/Logo.png" alt="Education Logo">
             <span>levelUpYourKnowledge</span>
@@ -17,6 +17,7 @@
             <a href="home.html">Home</a>
             <a href="profile.html">Profile</a>
             <input type="search" placeholder="Search" class="search-bar" id="search-input">
+            <button id="search-button">Search</button>
         </div>
         <div class="hamburger" id="hamburger">
             &#9776; <!-- Unicode untuk hamburger icon -->
@@ -169,6 +170,8 @@
 
         const searchBox = document.getElementById('search-input')
 
+        const searchButton = document.getElementById('search-button')
+
 
         async function fetchRandomNews(){
             try{
@@ -183,22 +186,10 @@
                 console.error("Error fetching random news", error)
                 return []
             }
-
-        searchBox.addEventListener("click", async () =>{
-            const query = searchField.ariaValueMax.trim()
-            if(query !== ""){
-                try{
-                    const articles = await fetchNewsQuery()
-                    displayBlogs(articles)
-                }catch(error){
-                    console.error("Error fetching news by query", error)
-                }
-
-            }
-        })
+        }
         async function fetchNewsQuery(query){
             try{
-                const apiUrl = `https://newsapi.org/v2/top-headlines?country=${query}&pageSize=12&apikey=${apiKey}`
+                const apiUrl = `https://newsapi.org/v2/everything?q=${query}&pageSize=12&apikey=${apiKey}`
 
                 const response = await fetch(apiUrl)
 
@@ -206,11 +197,33 @@
                 return data.articles;
 
             } catch(error){
-                console.error("Error fetching random news", error)
-                return []
+                console.error("Error fetching news by query", error);
+                return [];
             }
         }
-        }
+
+        searchButton.addEventListener("click", async () => {
+            const query = searchBox.value.trim();
+            if(query !== ""){
+                try{
+                    const articles = await fetchNewsQuery(query);
+                    displayBlogs(articles);
+                } catch(error){
+                    console.log("Error fetching news by query", error);
+                }
+            }
+        });
+
+// Call fetchRandomNews to load initial articles
+        (async () => {
+            try {
+                const articles = await fetchRandomNews();
+                displayBlogs(articles);
+            } catch(error) {
+                console.error("Error fetching random news", error);
+            }
+        })();
+        
         function displayBlogs(articles){
             blogContainer.innerHTML = "";
             articles.forEach((article) => {

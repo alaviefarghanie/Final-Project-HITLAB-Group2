@@ -259,6 +259,16 @@ nav {
     margin: auto;
 }
 
+#search-button{
+    padding: 10px 20px;
+    background-color: #2C3AE6;
+    color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    margin: 10px;
+}
+
 #blog-container {
     display: flex;
     padding: 3rem 0;
