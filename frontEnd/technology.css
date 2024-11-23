@@ -47,7 +47,7 @@ nav {
 }
 
 /* Business Card */
-.card {
+/* .card {
     background: linear-gradient(to right, #d4d9f2, #ffffff);
     margin: 0;
     padding: 0;
@@ -141,7 +141,7 @@ nav {
 
 .learn-button:hover {
     background: #3254c7;
-}
+} */
 
 /* LevelUp */
 .levelUp {
@@ -173,7 +173,7 @@ nav {
     line-height: 1.6;
 }
 
-/* Classes */
+/* Classes
 .classes1 {
     font-family: Arial, Helvetica, sans-serif;
     flex: 1 1 200px;
@@ -252,6 +252,68 @@ nav {
 
 .icons-card button:hover{
     color: #007bff;
+} */
+
+.obj-width {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#search-button{
+    padding: 10px 20px;
+    background-color: #2C3AE6;
+    color: #f5f5f5;
+    cursor: pointer;
+    border-radius: 16px;
+    border: none;
+    margin: 10px;
+}
+
+#blog-container {
+    display: flex;
+    padding: 3rem 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.blog-card{
+    width: 280px;
+    border: 2px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s;
+    border-color: #2C3AE6;
+
+}
+
+.blog-card:hover{
+    transform: translateY();
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.blog-card h2{
+    color: #545AE8;
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.blog-card p {
+    font-size: 1.2 rem;
+    padding-top: 0.7rem;
+    padding: 10px;
 }
 
 .footer {
@@ -260,6 +322,8 @@ nav {
     padding: 40px 60px;
     font-family: Arial, sans-serif;
 }
+
+
 
 .footer-container {
     display: flex;
@@ -384,3 +448,83 @@ nav {
 .newsletter-button:hover {
     background-color: #1C2AD6;
 }
+
+@media (max-width: 968px) {
+    .class-cards {
+        flex-direction: column;
+    }
+
+    .class-cards {
+        order: -1;
+    }
+
+    .class-cards {
+        gap: 1rem;
+    }
+
+    .class-cards {
+        width: calc(50% - 1rem);
+    }
+    .blog-card{
+        align-content: center;
+        
+    }
+}
+
+@media (max-width: 610px) {
+    .creator-card {
+        width: 100%;
+    }
+
+    .learning-class h2,
+    .creators h2 {
+        font-size: 1.5rem;
+    }
+    .blog-card{
+        width: 100%;
+    }
+}
+
+/* style.css */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Sembunyikan nav-links secara default */
+        flex-direction: column; /* Ubah menjadi kolom */
+        position: absolute;
+        top: 60px; /* Sesuaikan dengan tinggi navbar */
+        right: 0;
+        background-color: white; /* Atur background */
+        width: 100%; /* Lebar penuh */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    }
+
+    .nav-links.active {
+        display: flex; /* Tampilkan nav-links ketika aktif */
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .hamburger {
+        display: block; /* Tampilkan hamburger icon */
+    }
+    .search-bar{
+        margin: 10px;
+    }
+    .nav-links:hover{
+        box-shadow: 4px 4px 10px rgba(0,0,0,0.1);
+    }
+}
+
+
