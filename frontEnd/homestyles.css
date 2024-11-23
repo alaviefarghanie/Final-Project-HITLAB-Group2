@@ -237,6 +237,9 @@ nav {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    transition: transform 0.2s;
+
+    
 }
 
 .creator-card {
