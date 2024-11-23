@@ -205,12 +205,13 @@ nav {
 .learn-button {
     background: #4169E1;
     color: white;
-    padding: 0.8rem 1.5rem;
+    padding: 20px;
     border: none;
     border-radius: 4px;
-    font-size: 1rem;
+    font-size: 10px;
     cursor: pointer;
     transition: background 0.3s ease;
+    width: fit-content
 }
 
 .learn-button:hover {
