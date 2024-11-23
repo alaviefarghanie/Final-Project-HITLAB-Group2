@@ -1,4 +1,3 @@
-/* File: styles.css */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navigation Styles */
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -47,109 +46,38 @@ nav {
     width: 200px;
 }
 
-/* Hero Section Styles */
-.hero {
-    height: calc(100vh - 70px);
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
-                url('https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-    background-position: center;
+/* Business Card */
+.card {
+    background: linear-gradient(to right, #d4d9f2, #ffffff);
+    margin: 0;
+    padding: 0;
+    height: 65vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    color: white;
-    padding: 0 1rem;
+    align-items: center;
 }
-
-.hero-content {
-    max-width: 800px;
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
-.cta-button {
-    background: #4169E1;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 4px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.cta-button:hover {
-    background: #3254c7;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .search-bar {
-        width: 150px;
-    }
-}
-
-@media (max-width: 480px) {
-    .nav-links {
-        gap: 1rem;
-    }
-
-    .search-bar {
-        width: 120px;
-    }
-}
-
-/* styles.css */
-/* ... (Previous CSS styles remain the same) ... */
-
-/* Learning Class Section */
-.learning-class {
-    padding: 4rem 5%;
-}
-
-.learning-class h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2rem;
-}
-
-.class-cards {
+.Business-Card {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 10px;
+    max-width: 1500px;
+    margin: 80px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .class-card {
     background: white;
     border-radius: 1rem;
     padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
 .card-content {
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
+    gap: 5px;
 }
 
 .card-text {
@@ -158,6 +86,7 @@ nav {
 
 .card-text h3 {
     font-size: 1.8rem;
+    margin-top: 25px;
     margin-bottom: 1rem;
     color: #333;
 }
@@ -192,10 +121,7 @@ nav {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 200px;
-}
-
-.tech-image {
-    background-image: url('path-to-tech-image.png');
+    margin-right: 100px;
 }
 
 .business-image {
@@ -205,95 +131,129 @@ nav {
 .learn-button {
     background: #4169E1;
     color: white;
-    padding: 20px;
+    padding: 4px 6px 8px;
     border: none;
-    border-radius: 4px;
-    font-size: 10px;
+    border-radius: 6px;
+    font-size: 20px;
     cursor: pointer;
-    transition: background 0.3s ease;
-    width: fit-content
+    transition: 0.3s ease;
 }
 
 .learn-button:hover {
     background: #3254c7;
 }
 
-/* Creators Section */
-.creators {
-    padding: 4rem 5%;
-    background: #f5f5f5;
-}
-
-.creators h2 {
-    text-align: center;
-    margin-bottom: 3rem;
-    font-size: 2rem;
-}
-
-.creator-cards {
+/* LevelUp */
+.levelUp {
+    height: calc(100vh - 70px);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
     display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.creator-card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 250px;
+    color: white;
+    padding: 0;
 }
 
-.creator-card img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+.levelUp-content {
+    max-width: 800px;
+}
+
+.levelUp h1 {
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.creator-card p {
+.levelUp p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Classes */
+.classes1 {
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1 1 200px;
+    margin-top: 0;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    background-color: white
+}
+
+.classes2 {
+    font-family: Arial, Helvetica, sans-serif;
+    flex: 1 1 200px;
+    margin: 0;
+    padding: 0;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white
+}
+
+.class-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax (200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.class-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.class-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 15rem;
+    height: 15rem;
+    margin-bottom: 15px;
+}
+
+.title {
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 0.5rem;
     color: #333;
+    margin-bottom: 10px;
 }
 
-.creator-card span {
-    color: #666;
+.stats-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
 }
 
-/* Responsive Design */
-@media (max-width: 968px) {
-    .card-content {
-        flex-direction: column;
-    }
-
-    .card-image {
-        order: -1;
-    }
-
-    .creator-cards {
-        gap: 1rem;
-    }
-
-    .creator-card {
-        width: calc(50% - 1rem);
-    }
+.icons-card button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: color 0.2s;
 }
 
-@media (max-width: 480px) {
-    .creator-card {
-        width: 100%;
-    }
-
-    .learning-class h2,
-    .creators h2 {
-        font-size: 1.5rem;
-    }
+.icons-card button:hover{
+    color: #007bff;
 }
+
 .footer {
     background-color: #545AE8;
     color: white;
