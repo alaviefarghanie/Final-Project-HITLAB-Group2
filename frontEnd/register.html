@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="registerstyles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="assets/Logo.png" alt="Education Logo">
+                <span>levelUpYourKnowledge</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <input type="search" placeholder="Search" class="search-bar">
+            </div>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="register">
+            <h1>Create an Account</h1>
+            <form action="welcome.html" method="POST" class="register-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+
+                <button type="submit" class="register-button">Register</button>
+
+                <div class="register-links">
+                    <p>Already have an account? <a href="signin.html">Sign In</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f9fa;
+}
+
+.logo {
+    height: 40px;
+}
+
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.search-bar {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.content {
+    padding: 30px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
+}
+
+.content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.discussion {
+    padding: 30px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.discussion h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.discussion textarea {
+    width: 100%;
+    max-width: 600px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.character-count {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.send-button {
+    background: #4169E1;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.filter-buttons {
+    margin-top: 20px;
+}
+
+.filter-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #3b3b98;
+    color: white;
+    padding: 30px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 20px;
+    min-width: 150px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.subscribe-button {
+    padding: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+}    
+

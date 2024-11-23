@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="signinstyles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">
+                <img src="assets/Logo.png" alt="Education Logo">
+                <span>levelUpYourKnowledge</span>
+            </a>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <input type="search" placeholder="Search" class="search-bar">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="sign-in">
+            <h1>Sign In</h1>
+            <form action="dashboard.html" method="POST" class="sign-in-form">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+
+                <button type="submit" class="sign-in-button">Sign In</button>
+
+                <div class="sign-in-links">
+                    <a href="#">Forgot Password?</a> | <a href="register.html">Create an Account</a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+</html>
