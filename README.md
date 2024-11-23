@@ -2,7 +2,7 @@
 1. About Project
     Website E-Learning (SGD #4 Quality Education).gi
 2. Features
-    User be able to watch a video on a website.
+    User be able to queries about trending news that have correlation with education such as AI.
 3. Teams
     - Alavie Farghanie (WebDev_014)
     - Balqis Aulia Rahmah (WebDev_031)
